@@ -1,0 +1,28 @@
+{
+  "name": "tnt.newick",
+  "version": "0.0.0",
+  "description": "Newick and nhx input functions for tnt",
+  "main": "newick.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emepyc/tnt.newick"
+  },
+  "keywords": [
+    "newick",
+    "nhx",
+    "parser"
+  ],
+  "author": "Miguel Pignatelli",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/emepyc/tnt.newick/issues"
+  },
+  "homepage": "https://github.com/emepyc/tnt.newick",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4"
+  }
+}
