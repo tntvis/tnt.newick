@@ -63,17 +63,18 @@ module.exports = {
 	var ancestors = [];
 	var tree = {};
 	var tokens = s.split(/\s*(;|\(|\)|,|:)\s*/);
+	var subtree;
 	for (var i=0; i<tokens.length; i++) {
 	    var token = tokens[i];
 	    switch (token) {
             case '(': // new branchset
-		var subtree = {};
+		subtree = {};
 		tree.children = [subtree];
 		ancestors.push(tree);
 		tree = subtree;
 		break;
             case ',': // another branch
-		var subtree = {};
+		subtree = {};
 		ancestors[ancestors.length-1].children.push(subtree);
 		tree = subtree;
 		break;
@@ -97,19 +98,20 @@ module.exports = {
     parse_nhx : function (s) {
 	var ancestors = [];
 	var tree = {};
+	var subtree;
 
 	var tokens = s.split( /\s*(;|\(|\)|\[|\]|,|:|=)\s*/ );
 	for (var i=0; i<tokens.length; i++) {
 	    var token = tokens[i];
 	    switch (token) {
             case '(': // new children
-		var subtree = {};
+		subtree = {};
 		tree.children = [subtree];
 		ancestors.push(tree);
 		tree = subtree;
 		break;
             case ',': // another branch
-		var subtree = {};
+		subtree = {};
 		ancestors[ancestors.length-1].children.push(subtree);
 		tree = subtree;
 		break;
