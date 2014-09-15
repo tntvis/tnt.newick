@@ -11,9 +11,24 @@ module.exports = function (grunt) {
 	mochaTest : {
 	    test : {
 		options: {
-		    reporter: 'spec'
+		    reporter: 'spec',
+		    require : 'coverage/blanket'
 		},
 		src: ['test/**/*.js']
+	    },
+	    'html-cov' : {
+		options : {
+		    reporter : 'html-cov',
+		    quiet : true,
+		    captureFile : 'coverage/coverage.html'
+		},
+		src : ['test/**/*.js']
+	    },
+	    'travis-cov' : {
+		options : {
+		    reporter : 'travis-cov',
+		},
+		src : ['test/**/*.js']
 	    }
 	}
     });
