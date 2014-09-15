@@ -143,7 +143,8 @@ module.exports = {
 		    case 'T':
 			tree.taxon_id = token;
 			break;
-
+		    default :
+			tree[tokens[i-2]] = token;
 		    }
 		}
 		else {
