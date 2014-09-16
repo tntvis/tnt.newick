@@ -34,11 +34,8 @@ module.exports = function (grunt) {
     });
 
     grunt.loadNpmTasks ('grunt-contrib-jshint');
-    grunt.loadNpmTasks ('grunt-mocha-test');
     grunt.loadNpmTasks ('grunt-mocha-cov');
 
-//    grunt.registerTask ('coverage', ['mochacov:coverage']);
-    grunt.registerTask ('only-test', ['jshint', 'mochaTest']);
-    grunt.registerTask ('default', ['jshint', 'mochaTest', 'mochacov']);
+    grunt.registerTask ('default', 'test');
     grunt.registerTask ('test', ['jshint', 'mochacov']);
 };
