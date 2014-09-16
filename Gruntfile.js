@@ -22,15 +22,6 @@ module.exports = function (grunt) {
 	    }
 	},
 
-	mochaTest : {
-	    test : {
-		options : {
-		    reporter : "spec"
-		},
-		src : ['test/**/*.js']
-	    }
-	}
-
     });
 
     grunt.loadNpmTasks ('grunt-contrib-jshint');
