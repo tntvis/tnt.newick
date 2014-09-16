@@ -59,10 +59,12 @@ describe ("parse_nhx", function () {
 	// D : duplication
 	// G : gene_id
 	// T : taxon_id
-	var tree = newick.parse_nhx ('((human:0.2[&&NHX:val1=9:D=1], chimp:0.3)primates:0.1, mouse:0.5)vertebrates:0.7');
+	var tree = newick.parse_nhx ('((human:0.2[&&NHX:val1=9:D=1:G=3:T=4], chimp:0.3)primates:0.1, mouse:0.5)vertebrates:0.7');
 	assert.strictEqual (tree.children[0].children[0].name, "human");
 	assert.equal (tree.children[0].children[0].val1, 9);
 	assert.equal (tree.children[0].children[0].duplication, 1);
+	assert.equal (tree.children[0].children[0].gene_id, 3);
+	assert.equal (tree.children[0].children[0].taxon_id, 4);
     });
 });
 
