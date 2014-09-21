@@ -1,0 +1,1 @@
+mytest = require('./index');
