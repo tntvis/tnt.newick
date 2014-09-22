@@ -1,1 +1,1 @@
-mytest = require('./index');
+tnt_newick = require('./index');
