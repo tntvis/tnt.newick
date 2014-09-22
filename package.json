@@ -1,6 +1,6 @@
 {
   "name": "tnt.newick",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Newick and nhx input functions for tnt",
   "main": "newick.js",
   "scripts": {
