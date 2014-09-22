@@ -41,7 +41,7 @@ gulp.task('default', ['lint', 'test', 'coveralls', 'build-browser', 'build-brows
 
 
 gulp.task('lint', function() {
-  return gulp.src('./lib/*.js')
+  return gulp.src('./src/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });

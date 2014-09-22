@@ -2,7 +2,7 @@
   "name": "tnt.newick",
   "version": "0.0.1",
   "description": "Newick and nhx input functions for tnt",
-  "main": "newick.js",
+  "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --require blanket --reporter mocha-lcov-reporter > coverage/lcov.info && gulp test && gulp coveralls"
   },
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "newick",
+    "biojs",
     "nhx",
     "parser"
   ],
