@@ -27,9 +27,10 @@ describe ("parse_newick", function () {
 
     it ('reads the branch lengths', function () {
 	var tree = newick.parse_newick ('((human:0.2, chimp:0.3)0.1, mouse:0.5)');
-	assert.closeTo (tree.children[1].length, 0.5, 0.05);
-	assert.closeTo (tree.children[0].children[0].length, 0.2, 0.05);
-	assert.closeTo (tree.children[0].children[1].length, 0.3, 0.05);
+	console.log(tree.children[1]);
+	assert.closeTo (tree.children[1].branch_length, 0.5, 0.05);
+	assert.closeTo (tree.children[0].children[0].branch_length, 0.2, 0.05);
+	assert.closeTo (tree.children[0].children[1].branch_length, 0.3, 0.05);
     });
 
     it ('reads internal nodes information', function () {

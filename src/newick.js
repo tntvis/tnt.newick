@@ -88,7 +88,7 @@ module.exports = {
 		if (x == ')' || x == '(' || x == ',') {
 		    tree.name = token;
 		} else if (x == ':') {
-		    tree.length = parseFloat(token);
+		    tree.branch_length = parseFloat(token);
 		}
 	    }
 	}
