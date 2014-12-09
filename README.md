@@ -10,7 +10,7 @@ Newick and nhx input functions for tnt
 
 ## Contributing
 
-Please submit all issues and pull requests to the [emepyc/tnt.newick](http://github.com/emepyc/tnt.newick) repository!
+Please submit all issues and pull requests to the [emepyc/tnt.newick](http://github.com/emepyc/tnt.newick) repository
 
 ## Support
 If you have any problem or suggestion please open an issue [here](https://github.com/emepyc/tnt.newick/issues).
