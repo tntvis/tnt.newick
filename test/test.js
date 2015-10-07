@@ -1,5 +1,5 @@
 var assert = require("chai").assert;
-var newick = require ("../src/newick.js");
+var newick = require ("../index.js");
 
 var tree;
 describe ("parse_newick", function () {
