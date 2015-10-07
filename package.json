@@ -4,9 +4,7 @@
   "description": "Parse newick and nhx trees",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test",
-    "prepublish": "gulp test && gulp build-browser",
-    "postinstall": "gulp build-browser"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
