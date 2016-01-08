@@ -1,6 +1,6 @@
 {
   "name": "tnt.newick",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Parse newick and nhx trees",
   "main": "index.js",
   "scripts": {
