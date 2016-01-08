@@ -15,7 +15,7 @@ var browserify = require('gulp-browserify');
 
 // gulp helper
 var gzip = require('gulp-gzip');
-var clean = require('gulp-rimraf');
+var del = require('del');
 var rename = require('gulp-rename');
 
 // path tools
@@ -51,11 +51,6 @@ gulp.task('test', function () {
                  useColors: false}));
 });
 
-// coveralls
-gulp.task('coveralls', function() {
-  return gulp.src('coverage/**/lcov.info')
-    .pipe(coveralls());
-});
 
 gulp.task('watch', function() {
    gulp.watch(['./src/**/*.js','./lib/**/*.js', './test/**/*.js'], function() {
@@ -66,7 +61,7 @@ gulp.task('watch', function() {
 
 // will remove everything in build
 gulp.task('clean', function() {
-  return gulp.src(buildDir).pipe(clean());
+  return del([buildDir]);
 });
 
 // just makes sure that the build dir exists

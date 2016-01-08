@@ -1,35 +1,29 @@
 [![Build Status](https://travis-ci.org/emepyc/tnt.newick.svg?branch=master)](https://travis-ci.org/emepyc/tnt.newick)
-[![NPM version](https://badge-me.herokuapp.com/api/npm/tnt.newick.png)](http://badges.enytc.com/for/npm/tnt.newick) 
+[![NPM version](https://badge-me.herokuapp.com/api/npm/tnt.newick.png)](http://badges.enytc.com/for/npm/tnt.newick)
 
 
-tnt.newick
-==========
-
-Newick and nhx input functions for tnt
-
-## Contributing
-
-Please submit all issues and pull requests to the [emepyc/tnt.newick](http://github.com/emepyc/tnt.newick) repository
-
-## Support
-If you have any problem or suggestion please open an issue [here](https://github.com/emepyc/tnt.newick/issues).
+# tnt.newick
 
 
-## License 
+Newick and nhx input functions for [TnT](http://github.com/emepyc/tnt)
 
+## Installation
 
-This software is licensed under the Apache 2 license, quoted below.
+- npm:
 
-Copyright (c) 2014, Miguel Pignatelli
+```
+npm install tnt.newick
+```
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License. You may obtain a copy of
-the License at
+- github:
 
-    http://www.apache.org/licenses/LICENSE-2.0
+```
+git clone https://github.com/emepyc/tnt.newick
+cd tnt.newick
+npm install
+gulp build-browser
+```
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-License for the specific language governing permissions and limitations under
-the License.
+## Feedback
+Please, send any feedback to emepyc@gmail.com.
+Bug reports and feature requests are welcome in the [issue tracker](https://github.com/emepyc/tnt.newick/issues/new)
