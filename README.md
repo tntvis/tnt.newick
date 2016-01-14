@@ -5,7 +5,7 @@
 # tnt.newick
 
 
-Newick and nhx input functions for [TnT](http://github.com/emepyc/tnt)
+Newick and nhx input functions for [TnT](http://tntvis.github.io/tnt)
 
 ## Installation
 
@@ -18,7 +18,7 @@ npm install tnt.newick
 - github:
 
 ```
-git clone https://github.com/emepyc/tnt.newick
+git clone https://github.com/tntvis/tnt.newick
 cd tnt.newick
 npm install
 gulp build-browser
@@ -26,4 +26,4 @@ gulp build-browser
 
 ## Feedback
 Please, send any feedback to emepyc@gmail.com.
-Bug reports and feature requests are welcome in the [issue tracker](https://github.com/emepyc/tnt.newick/issues/new)
+Bug reports and feature requests are welcome in the [issue tracker](https://github.com/tntvis/tnt.newick/issues/new)
