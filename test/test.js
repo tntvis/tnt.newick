@@ -43,6 +43,15 @@ describe ("parse_newick", function () {
 	assert.property (tree.children[0], "branch_length");
 	assert.closeTo (tree.children[0].branch_length, 0.1, 0.05);
     });
+
+	describe.only('Support to branch labels', function() {
+		it('auto recongnize branch', function() {
+			var tree = newick.parse_newick('((human:0.2, chimp:0.3)primates:0.1[30], mouse:0.5)vertebrates:0.7[75]')
+			assert.strictEqual(tree.branch_label, "75")
+			assert.strictEqual(tree.children[0].branch_label, "30")
+		})
+		it('Reads IC/ICA values as branch labels from RAxML trees')
+	})
 });
 
 describe ("parse_nhx", function () {
@@ -67,4 +76,3 @@ describe ("parse_nhx", function () {
 	assert.equal (tree.children[0].children[0].taxon_id, 4);
     });
 });
-
