@@ -77,7 +77,7 @@
  */
 
 module.exports = {
-    parse_newick : function(s) {
+    parse_newick : function(s, IC_ICA = true) {
 	var ancestors = [];
 	var tree = {};
 	var tokens = s.split(/\s*(;|\(|\)|,|:|\[|\])\s*/);
@@ -119,7 +119,7 @@ module.exports = {
 		else {
 			if (token === ']') {
 				IC_scores = _get_IC_from_RAxML(branch_label)
-				if (IC_scores) {
+				if (IC_scores && IC_ICA) {
 					tree.IC = IC_scores[0]
 					tree.ICA = IC_scores[1]
 				}
