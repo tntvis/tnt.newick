@@ -118,7 +118,14 @@ module.exports = {
 		}
 		else {
 			if (token === ']') {
-				tree.branch_label = branch_label
+				IC_scores = _get_IC_from_RAxML(branch_label)
+				if (IC_scores) {
+					tree.IC = IC_scores[0]
+					tree.ICA = IC_scores[1]
+				}
+				else {
+					tree.branch_label = branch_label
+				}
 				branch_label = ''
 				not_branch_label = true
 			}
@@ -127,7 +134,18 @@ module.exports = {
 			}
 		}
 	}
+
+	function _get_IC_from_RAxML(branch_label) {
+		scores = branch_label.split(',')
+		scores = scores.map(parseFloat)
+		if (scores.length === 2)
+			return scores
+		else
+			return false
+	}
+
 	return tree;
+
     },
 
     parse_nhx : function (s) {
